@@ -4,6 +4,12 @@
 
     <ul class="navbar-menu">
       <li>
+        <router-link :to="{name:'shop'}">Магазин</router-link>
+      </li>
+      <li>
+        <router-link :to="{name:'cart'}">Корзина</router-link>
+      </li>
+      <li>
         <router-link to="/">Заявки</router-link>
       </li>
       <li>

@@ -38,6 +38,33 @@ const routes = [
       layout: 'auth',
       auth: false
     }
+  },
+  {
+    path: '/shop',
+    name: 'shop',
+    component: () => import('../views/shop/ShopList'),
+    meta: {
+      layout: 'main',
+      auth: false
+    }
+  },
+  {
+    path: '/shop/product/:id',
+    name: 'shop-product',
+    component: () => import('../views/shop/ShopProduct'),
+    meta: {
+      layout: 'main',
+      auth: false
+    }
+  },
+  {
+    path: '/cart',
+    name: 'cart',
+    component: () => import('../views/shop/ShopCart'),
+    meta: {
+      layout: 'main',
+      auth: false
+    }
   }
 ]
 
